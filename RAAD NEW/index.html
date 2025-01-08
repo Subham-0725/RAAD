@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Learning Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boxicons CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/raad.jpg" alt="Logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">User Profile</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Left Text Section -->
+    <div class="main-content">
+      <video autoplay loop muted plays-inline class="background-clip">
+        <source src="img/background-video" type="video/mp4" />
+      </video>
+      <div class="left-text">
+        <p><span class="line1">Here Is Your</span></p>
+        <p><span class="line2">Ultimate Destination</span></p>
+        <p><span class="line3">Point</span></p>
+      </div>
+
+      <!-- New Content Section -->
+      <div class="content">
+        <p class="description">
+          Transfer your ideas into stunning products with RAAD's expert
+          development team
+        </p>
+        <button class="cta-button" onclick="scrollToSection()">
+          Get Started <i class="bx bx-right-arrow-alt"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- New Heading Section -->
+
+    <div id="new-heading" class="new-heading">
+      <h2>Build, Launch, and Scale your product with unmatched efficiency</h2>
+    </div>
+
+    <div class="boxes">
+      <div class="box-1">
+        <h1>100%</h1>
+        <p>
+          We Specialize in agile software development for innovative solutions
+        </p>
+      </div>
+      <div class="box-2">
+        <img src="img/growth.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- New Heading for 3 Boxes Section -->
+    <div class="new-heading-1">
+      <h2>Scale Your Software devlopment Projects confidently with RAAD</h2>
+    </div>
+
+    <!-- 3 New Boxes Section -->
+    <div class="two-boxes">
+      <div class="box">
+        <h3>Web Development</h3>
+        <p>
+          We have built a business focused on assembling talented developers who
+          have mastered the frameworks and technologies that power
+          modern solutions.
+        </p>
+      </div>
+      <div class="box">
+        <h3>UI/UX Design</h3>
+        <p>
+          Our UX researchers provide a comprehensive blueprint to guide the
+          design of your digital platform.
+        </p>
+      </div>
+    </div>
+
+    <!-- New Heading for 3 Boxes Section -->
+    <div class="new-heading-1">
+      <h2>
+        Develop Your Carrer In Cybersecurity Fundamentals To Advance Scenarios
+      </h2>
+    </div>
+
+    <!-- New 3 Boxes Section -->
+    <div class="three-boxes-extra">
+      <div class="box">
+        <h3>Roadmap for Cybersecurity</h3>
+        <p>
+          Innovative AI tools to streamline your processes and enhance
+          productivity.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Cybersecurity Security Programs</h3>
+        <p>
+          Scalable and secure cloud services tailored to your business needs.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Real World Projects</h3>
+        <p>
+          Protect your data and ensure safety with our advanced security
+          systems.
+        </p>
+      </div>
+    </div>
+
+    <!-- New Heading for the Next Three Boxes Section -->
+    <div class="new-heading-1">
+      <h2>Expand Your Skills in Web Development and Cybersecurity</h2>
+    </div>
+
+    <!-- New 3 Boxes Section -->
+    <div class="three-boxes-extra">
+      <div class="box">
+        <h3>Cloud Computing</h3>
+        <p>
+          Leverage cloud technology to power your applications and data
+          management.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Data Security</h3>
+        <p>
+          Protect sensitive information through strong encryption and security
+          protocols.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Machine Learning</h3>
+        <p>
+          Utilize AI and machine learning to optimize decision-making and
+          business operations.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feedback Form Section -->
+    <div class="feedback-section">
+      <h2>We Value Your Feedback</h2>
+      <p>Please share your thoughts to help us improve.</p>
+      <form action="submit_feedback.php" method="POST" class="feedback-form">
+        <label for="name">Your Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Your Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea
+          id="feedback"
+          name="feedback"
+          placeholder="Write your feedback here..."
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit" class="submit-button">Submit Feedback</button>
+      </form>
+    </div>
+
+    <!-- Get in Touch Section -->
+    <div class="get-in-touch">
+      <h2>Get In Touch</h2>
+      <p>We'd love to hear from you! Let us know how we can assist you.</p>
+      <form action="submit_contact.php" method="POST" class="contact-form">
+        <label for="contact-name">Name:</label>
+        <input
+          type="text"
+          id="contact-name"
+          name="contact-name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="business-email">Business Email:</label>
+        <input
+          type="email"
+          id="business-email"
+          name="business-email"
+          placeholder="Enter your business email"
+          required
+        />
+
+        <label for="phone-number">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone-number"
+          name="phone-number"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="help-message">How can we help you?</label>
+        <textarea
+          id="help-message"
+          name="help-message"
+          placeholder="Write your message here..."
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit" class="submit-button">Book Your Time</button>
+      </form>
+    </div>
+
+  
+    <!-- Certification Section -->
+<div class="certification-section">
+  <h2>Certification Registration</h2>
+  <p>Register to enhance your skills with our certification courses.</p>
+  <form action="submit_certification.php" method="POST" class="certification-form">
+    <label for="cert-name">Name:</label>
+    <input
+      type="text"
+      id="cert-name"
+      name="cert-name"
+      placeholder="Enter your name"
+      required
+    />
+
+    <label for="cert-email">Email:</label>
+    <input
+      type="email"
+      id="cert-email"
+      name="cert-email"
+      placeholder="Enter your email"
+      required
+    />
+
+    <label for="cert-phone">Phone Number:</label>
+    <input
+      type="tel"
+      id="cert-phone"
+      name="cert-phone"
+      placeholder="Enter your phone number"
+      required
+    />
+
+    <label for="cert-branch">Branch:</label>
+    <input
+      type="text"
+      id="cert-branch"
+      name="cert-branch"
+      placeholder="Enter your branch"
+      required
+    />
+
+    <label for="cert-year">Year:</label>
+    <input
+      type="text"
+      id="cert-year"
+      name="cert-year"
+      placeholder="Enter your year"
+      required
+    />
+
+    <label for="cert-course">Course:</label>
+    <select id="cert-course" name="cert-course" required>
+      <option value="" disabled selected>Select your course</option>
+      <option value="cybersecurity">Cybersecurity</option>
+      <option value="web-development">Web Development</option>
+    </select>
+
+    <button type="submit" class="submit-button">Register</button>
+  </form>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
